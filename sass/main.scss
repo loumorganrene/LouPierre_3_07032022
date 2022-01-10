@@ -85,8 +85,6 @@
     }
 }
 
-
-
 #restaurants {
     background: #f6f6f6;
 }
@@ -100,6 +98,7 @@
 }
 
 .restaurant__card {
+    position: relative;
     background: white;
     border: 0;
     border-radius: 20px;
@@ -113,6 +112,19 @@
             height: 180px;
             border: 0;
             border-radius: 20px 20px 0 0;
+        }
+        span {
+            position: absolute;
+            width: fit-content;
+            top: 15px;
+            right: 15px;
+            text-align: center;
+            font-weight: 500;
+            color: darken($color-tertiary, $amount: 40);
+            padding: .3rem .7rem;
+            background: $color-tertiary;
+            border-radius: 2px;
+            @include shadow;
         }
 }
 
