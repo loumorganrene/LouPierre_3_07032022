@@ -134,11 +134,16 @@ button {
   width: 100%;
   padding: 1.5rem 3rem;
   padding-left: 2rem;
+  width: 100%;
   background: #f6f6f6;
   border: 0;
   border-radius: 20px;
   font-weight: 500;
   box-shadow: 0px 5px 10px 3px rgba(128, 128, 128, 0.4);
+}
+.instruction__block:hover {
+  background: rgba(147, 86, 220, 0.2);
+  cursor: pointer;
 }
 
 #restaurants {
@@ -183,6 +188,11 @@ button {
 .card__body i {
   font-size: 1.5rem;
 }
+.card__body i:hover {
+  background: -webkit-linear-gradient(top, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 footer {
   background: #353535;
@@ -195,6 +205,43 @@ footer a {
 }
 footer i {
   padding-right: 1.5rem;
+}
+
+.menu {
+  background-color: #f6f6f6;
+  border-radius: 20px;
+}
+
+.dish__container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  gap: 1rem;
+}
+.dish__container h2 {
+  margin: 0;
+  padding: 0;
+  margin-top: 2.5rem;
+}
+
+.dish__tag {
+  width: 100%;
+  background: #f6f6f6;
+  border: 0;
+  border-radius: 20px;
+  font-weight: 500;
+  box-shadow: 0px 5px 10px 3px rgba(128, 128, 128, 0.4);
+  background: white;
+  padding: 0.5rem 1rem;
+}
+
+.tag__body {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 300;
+}
+.tag__body .tag__price {
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */

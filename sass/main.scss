@@ -22,6 +22,15 @@ $color-tertiary:#99E2D0;
     box-shadow: 0px 5px 10px 3px rgba(128, 128, 128, 0.4);
 }
 
+@mixin tag-block {
+    width: 100%;
+    background: #f6f6f6;
+    border: 0;
+    border-radius: 20px;
+    font-weight: 500;
+    @include shadow;
+}
+
 body {
     @include margin-padding;
 }
@@ -124,7 +133,7 @@ button {
     cursor: pointer;
 }
 
-.instruction__container{
+.instruction__container {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -141,11 +150,11 @@ button {
     width: 100%;
     padding: 1.5rem 3rem;
     padding-left: 2rem;
-    background: #f6f6f6;
-    border: 0;
-    border-radius: 20px;
-    font-weight: 500;
-    @include shadow;
+    @include tag-block;
+    &:hover {
+        background: fade-out($color-primary, .8);
+        cursor: pointer;
+    }
 }
 
 #restaurants {
@@ -188,6 +197,11 @@ button {
     padding: 1rem;
     i {
         font-size: 1.5rem;
+        &:hover {
+            background: -webkit-linear-gradient(top, $color-secondary, $color-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     }
 }
 
@@ -202,4 +216,36 @@ footer {
     i {
         padding-right: 1.5rem;
     }
+}
+
+.menu {
+    background-color: #f6f6f6;
+    border-radius: 20px;
+}
+
+.dish__container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    gap: 1rem;
+    h2 {
+        @include margin-padding;
+        margin-top: 2.5rem;
+    }
+}
+
+.dish__tag {
+    @include tag-block;
+    background: white;
+    padding: .5rem 1rem;
+}
+
+.tag__body {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    .tag__price {
+        font-weight: bold;
+    }
+
 }
