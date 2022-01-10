@@ -60,7 +60,7 @@ button {
   border: 0;
   border-radius: 30px;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  box-shadow: 0px 5px 10px 3px rgba(128, 128, 128, 0.4);
+  box-shadow: 0px 5px 10px -3px rgba(128, 128, 128, 0.3);
 }
 button:hover {
   opacity: 0.9;
@@ -180,7 +180,7 @@ html {
   border: 0;
   border-radius: 20px;
   font-weight: 500;
-  box-shadow: 0px 5px 10px 3px rgba(128, 128, 128, 0.4);
+  box-shadow: 0px 5px 10px -3px rgba(128, 128, 128, 0.3);
   background: white;
   padding: 0.5rem 1rem;
 }
@@ -236,7 +236,7 @@ html {
 .instruction__container {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 1rem;
   padding: 0 2rem 4rem;
 }
 
@@ -252,7 +252,7 @@ html {
   border: 0;
   border-radius: 20px;
   font-weight: 500;
-  box-shadow: 0px 5px 10px 3px rgba(128, 128, 128, 0.4);
+  box-shadow: 0px 5px 10px -3px rgba(128, 128, 128, 0.3);
 }
 .instruction__block:hover {
   background: rgba(147, 86, 220, 0.2);
@@ -301,7 +301,7 @@ html {
   background: white;
   border: 0;
   border-radius: 20px;
-  box-shadow: 0px 5px 10px 3px rgba(128, 128, 128, 0.4);
+  box-shadow: 0px 5px 10px -3px rgba(128, 128, 128, 0.3);
 }
 .restaurant__card a {
   display: flex;
@@ -324,7 +324,7 @@ html {
   padding: 0.3rem 0.7rem;
   background: #99E2D0;
   border-radius: 2px;
-  box-shadow: 0px 5px 10px 3px rgba(128, 128, 128, 0.4);
+  box-shadow: 0px 5px 10px -3px rgba(128, 128, 128, 0.3);
 }
 
 .restaurant__card-img {
@@ -337,13 +337,24 @@ html {
   justify-content: space-between;
   padding: 1rem;
 }
-.card__body i {
+.card__body .card__action--heart .fas {
+  display: none;
+}
+.card__body .card__action--heart .far {
+  display: flex;
   font-size: 1.5rem;
 }
-.card__body i:hover {
+.card__body .card__action--heart:hover {
   background: -webkit-linear-gradient(top, #FF79DA, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.card__body .card__action--heart:hover .fas {
+  display: flex;
+  font-size: 1.45rem;
+}
+.card__body .card__action--heart:hover .far {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
