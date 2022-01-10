@@ -239,13 +239,10 @@ html {
   gap: 30px;
   padding: 0 2rem 4rem;
 }
-.instruction__container i {
-  color: rgba(0, 0, 0, 0.5);
-  padding-right: 2.5rem;
-}
 
 .instruction__block {
   display: flex;
+  position: relative;
   align-items: baseline;
   width: 100%;
   padding: 1.5rem 3rem;
@@ -260,6 +257,31 @@ html {
 .instruction__block:hover {
   background: rgba(147, 86, 220, 0.2);
   cursor: pointer;
+}
+.instruction__block:hover i {
+  color: #9356DC;
+}
+.instruction__block i {
+  color: rgba(0, 0, 0, 0.5);
+  padding-right: 2.5rem;
+}
+.instruction__block .fa-layers {
+  display: flex;
+  position: absolute;
+  align-self: center;
+  left: -15px;
+  padding-right: 0;
+  font-size: 2rem;
+}
+.instruction__block .fa-layers .fa-circle {
+  color: #9356DC;
+}
+.instruction__block .fa-layers .fa-layers-text {
+  position: absolute;
+  align-self: center;
+  left: 0.7rem;
+  font-size: 1rem;
+  color: white;
 }
 
 #restaurants {

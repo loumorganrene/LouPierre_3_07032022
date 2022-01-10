@@ -44,14 +44,11 @@
     flex-direction: column;
     gap: 30px;
     padding: 0 2rem 4rem;
-    i {
-        color: rgba(0, 0, 0, 0.5);
-        padding-right: 2.5rem;
-    }
 }
 
 .instruction__block {
     display: flex;
+    position: relative;
     align-items: baseline;
     width: 100%;
     padding: 1.5rem 3rem;
@@ -60,8 +57,35 @@
     &:hover {
         background: fade-out($color-primary, .8);
         cursor: pointer;
+        i {
+            color: $color-primary;
+        }
+    }
+    i {
+        color: rgba(0, 0, 0, 0.5);
+        padding-right: 2.5rem;
+    }
+    .fa-layers {
+        display: flex;
+        position: absolute;
+        align-self: center;
+        left: -15px;
+        padding-right: 0;
+        font-size: 2rem;
+        .fa-circle {
+            color: $color-primary;
+        }
+        .fa-layers-text{
+            position: absolute;
+            align-self: center;
+            left: .7rem;
+            font-size: 1rem;
+            color: white;
+        }
     }
 }
+
+
 
 #restaurants {
     background: #f6f6f6;
