@@ -1,0 +1,47 @@
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+body {
+    @include margin-padding;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+    @include margin-padding;
+}
+
+li {
+    margin: .5rem 0;
+}
+
+h1 {
+    font-size: 1.75rem;
+    @include margin-padding;
+}
+
+h2 {
+    @include margin-padding;
+    padding: 3rem 0 1.5rem 1rem ;
+}
+
+h3 {
+    @include margin-padding;
+}
+
+p {
+    @include margin-padding;
+}

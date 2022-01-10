@@ -1,91 +1,10 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-html {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-}
-
-$color-primary:#9356DC;
-$color-secondary:#FF79DA;
-$color-tertiary:#99E2D0;
-
-@mixin margin-padding {
-    margin: 0;
-    padding: 0;
-}
-
-@mixin shadow {
-    box-shadow: 0px 5px 10px 3px rgba(128, 128, 128, 0.4);
-}
-
-@mixin tag-block {
-    width: 100%;
-    background: #f6f6f6;
-    border: 0;
-    border-radius: 20px;
-    font-weight: 500;
-    @include shadow;
-}
-
-body {
-    @include margin-padding;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-ul {
-    list-style: none;
-    @include margin-padding;
-}
-
-li {
-    margin: .5rem 0;
-}
-
-h1 {
-    font-size: 1.75rem;
-    @include margin-padding;
-}
-
-h2 {
-    @include margin-padding;
-    padding: 3rem 0 1.5rem 1rem ;
-}
-
-h3 {
-    @include margin-padding;
-}
-
-p {
-    @include margin-padding;
-}
-
-header {
-    display: flex;
-    flex-direction: column;
-}
-
-.header__logo {
-    display: flex;
-    position: sticky;
-    top: 0;
-    background: white;
-    justify-content: center;
-    width: 100%;
-    height: 4rem;
-    box-shadow: 0px 1px 5px grey;
-    img {
-        max-width: 45%;
-        height: auto;
-    }
-}
+@import "Utils/variables";
+@import "Utils/mixins";
+@import "Base/base";
+@import "Components/button";
+@import "Layouts/header";
+@import "Layouts/footer";
+@import "Pages/menu";
 
 .explore__container {
     display: flex;
@@ -118,19 +37,6 @@ header {
         font-weight: 300;
         margin: .8rem 0 1.5rem 0;
     }
-}
-
-button {
-    width: fit-content;
-    padding: 1rem;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    color: white;
-    border: 0;
-    border-radius: 30px;
-    background: linear-gradient(to bottom right, $color-secondary, $color-primary);
-    @include shadow;
-    cursor: pointer;
 }
 
 .instruction__container {
@@ -203,49 +109,4 @@ button {
             -webkit-text-fill-color: transparent;
         }
     }
-}
-
-footer {
-    background: #353535;
-    padding: 1rem;
-    color: white;
-    a {
-        display: flex;
-        color: white;
-    }
-    i {
-        padding-right: 1.5rem;
-    }
-}
-
-.menu {
-    background-color: #f6f6f6;
-    border-radius: 20px;
-}
-
-.dish__container {
-    display: flex;
-    flex-direction: column;
-    padding: 0 1rem;
-    gap: 1rem;
-    h2 {
-        @include margin-padding;
-        margin-top: 2.5rem;
-    }
-}
-
-.dish__tag {
-    @include tag-block;
-    background: white;
-    padding: .5rem 1rem;
-}
-
-.tag__body {
-    display: flex;
-    justify-content: space-between;
-    font-weight: 300;
-    .tag__price {
-        font-weight: bold;
-    }
-
 }

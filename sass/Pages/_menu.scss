@@ -1,0 +1,79 @@
+.fa-arrow-left{
+    position: absolute;
+    align-self: center;
+    left: 20px;
+    font-size: 1.5rem;
+}
+
+.header__restaurant {
+    object-fit: cover;
+    img {
+        width: 100%;
+        height: 200px;
+        border: 0;
+        border-radius: 20px 20px 0 0;
+    }
+}
+
+.restaurant__img {
+    object-fit: cover;
+}
+
+.menu__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-family: 'Shrikhand', cursive;
+    padding: 2rem 1rem;
+    i {
+        font-size: 1.5rem;
+    }
+}
+
+.menu {
+    background-color: #f6f6f6;
+    border-radius: 20px;
+}
+
+.dish__container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    gap: 1rem;
+    h2 {
+        @include margin-padding;
+        width: fit-content;
+        margin-top: 2.5rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        &:after {
+            content: ""; /* This is necessary for the pseudo element to work. */ 
+            display: block; /* This will put the pseudo element on its own line. */
+            margin: .2rem 0; /* This will center the border. */
+            width: 3.5rem; /* Change this to whatever width you want. */
+            border-bottom: 3px solid $color-tertiary; /* This creates the border. Replace black with whatever color you want. */
+        }
+    }
+}
+
+.dish__tag {
+    @include tag-block;
+    background: white;
+    padding: .5rem 1rem;
+}
+
+.tag__body {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    .tag__price {
+        font-weight: bold;
+    }
+}
+
+.order-btn__container {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 1rem 5rem;
+}
+

@@ -1,0 +1,15 @@
+button {
+    padding: 1rem 0;
+    width: 200px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: white;
+    border: 0;
+    border-radius: 30px;
+    background: linear-gradient(to bottom right, $color-secondary, $color-primary);
+    @include shadow;
+    &:hover {
+        opacity: 0.9;
+        cursor: pointer;
+    }
+}
