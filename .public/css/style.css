@@ -67,6 +67,26 @@ button:hover {
   cursor: pointer;
 }
 
+.card__action--heart .fas {
+  display: none;
+}
+.card__action--heart .far {
+  display: flex;
+  font-size: 1.5rem;
+}
+.card__action--heart:hover {
+  background: -webkit-linear-gradient(top, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.card__action--heart:hover .fas {
+  display: flex;
+  font-size: 1.45rem;
+}
+.card__action--heart:hover .far {
+  display: none;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -134,9 +154,6 @@ html {
   align-items: baseline;
   font-family: "Shrikhand", cursive;
   padding: 2rem 1rem 0;
-}
-.menu__title i {
-  font-size: 1.5rem;
 }
 
 .menu {
@@ -336,25 +353,6 @@ html {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
-}
-.card__body .card__action--heart .fas {
-  display: none;
-}
-.card__body .card__action--heart .far {
-  display: flex;
-  font-size: 1.5rem;
-}
-.card__body .card__action--heart:hover {
-  background: -webkit-linear-gradient(top, #FF79DA, #9356DC);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.card__body .card__action--heart:hover .fas {
-  display: flex;
-  font-size: 1.45rem;
-}
-.card__body .card__action--heart:hover .far {
-  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

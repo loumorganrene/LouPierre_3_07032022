@@ -13,3 +13,25 @@ button {
         cursor: pointer;
     }
 }
+
+.card__action--heart {
+    .fas {
+        display: none;
+    }
+    .far {
+        display: flex;
+        font-size: 1.5rem;
+    }
+    &:hover {
+        .fas {
+            display: flex;
+            font-size: 1.45rem;
+        }
+        .far {
+            display: none;
+        }
+        background: -webkit-linear-gradient(top, $color-secondary, $color-primary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    } 
+}
