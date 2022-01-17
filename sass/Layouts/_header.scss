@@ -4,7 +4,6 @@ header {
 }
 
 .header__logo {
-    position: relative;
     top: 0;
     display: flex;
     position: sticky;
@@ -13,7 +12,7 @@ header {
     width: 100%;
     min-height: 4rem;
     box-shadow: 0px 1px 5px grey;
-
+    z-index: 5;
     img {
         max-width: 45%;
         height: auto;

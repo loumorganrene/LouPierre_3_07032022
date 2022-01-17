@@ -6,8 +6,8 @@
     color: rgb(255, 255, 255, 1);
     border: 0;
     border-radius: 30px;
-    @include shadow-hover;
-    background: -webkit-linear-gradient(bottom, $color-primary, $color-secondary);
+    @include shadow;
+    background: linear-gradient(to bottom, $color-primary, $color-secondary);
     position: relative;
     z-index: 1;
     &:hover {
@@ -15,45 +15,51 @@
         opacity: 1;
         }
         cursor: pointer;
-        @include shadow;
+        @include shadow-hover;
     }
     &::after {
         content: "";
         position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        border: 0;
+        inset: 0;
         border-radius: 30px;
         opacity: 0;
         z-index: -1;
-        background: -webkit-linear-gradient(bottom, darken($color-primary,5), darken($color-secondary,5));
+        background: linear-gradient(to bottom, lighten($color-primary,5), lighten($color-secondary,5));
         transition: opacity 300ms;
         }
-
     }
 
 
 .card__action--heart {
+    display: flex;
+    padding: .2rem .5rem 0 0;
     .fas {
-        display: none;
-    }
-    .far {
-        display: flex;
+        position: relative;
+        inset: 0;
+        background: linear-gradient(to top, $color-secondary, $color-primary);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
         font-size: 1.5rem;
+        opacity: 0;
+        inset: 0;
+        transition: opacity 200ms ease-in;
     }
 
-    &:hover {
-        .far {
-            display: none;
-        }
-        .fas {
-            display: flex;
-            font-size: 1.45rem;
-        }
-        background: -webkit-linear-gradient(top, $color-secondary, $color-primary);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+    .far {
+        position: absolute;
+        opacity: 1;
+        font-size: 1.5rem;
+        transition: opacity 150ms;
     }
+
+    &:active {
+        .fas {
+            opacity: 1;
+
+        }
+        .far {
+            opacity: 0;
+        }
+    }
+    transition-delay: all 100ms;
 }

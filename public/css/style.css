@@ -59,15 +59,15 @@ p {
   color: white;
   border: 0;
   border-radius: 30px;
-  box-shadow: 0 5px 10px -3px rgba(128, 128, 128, 0.6);
-  transition: all 300ms;
-  background: -webkit-linear-gradient(bottom, #9356DC, #FF79DA);
+  box-shadow: 0px 5px 10px -3px rgba(128, 128, 128, 0.4);
+  background: linear-gradient(to bottom, #9356DC, #FF79DA);
   position: relative;
   z-index: 1;
 }
 .button:hover {
   cursor: pointer;
-  box-shadow: 0px 5px 10px -3px rgba(128, 128, 128, 0.3);
+  box-shadow: 0 5px 10px -3px rgba(128, 128, 128, 0.6);
+  transition: all 300ms;
 }
 .button:hover::after {
   opacity: 1;
@@ -75,36 +75,41 @@ p {
 .button::after {
   content: "";
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border: 0;
+  inset: 0;
   border-radius: 30px;
   opacity: 0;
   z-index: -1;
-  background: -webkit-linear-gradient(bottom, #8641d8, #ff60d3);
+  background: linear-gradient(to bottom, #a16be0, #ff93e1);
   transition: opacity 300ms;
 }
 
+.card__action--heart {
+  display: flex;
+  padding: 0.2rem 0.5rem 0 0;
+  transition-delay: all 100ms;
+}
 .card__action--heart .fas {
-  display: none;
+  position: relative;
+  inset: 0;
+  background: linear-gradient(to top, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.5rem;
+  opacity: 0;
+  inset: 0;
+  transition: opacity 200ms ease-in;
 }
 .card__action--heart .far {
-  display: flex;
+  position: absolute;
+  opacity: 1;
   font-size: 1.5rem;
+  transition: opacity 150ms;
 }
-.card__action--heart:hover {
-  background: -webkit-linear-gradient(top, #FF79DA, #9356DC);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.card__action--heart:active .fas {
+  opacity: 1;
 }
-.card__action--heart:hover .far {
-  display: none;
-}
-.card__action--heart:hover .fas {
-  display: flex;
-  font-size: 1.45rem;
+.card__action--heart:active .far {
+  opacity: 0;
 }
 
 header {
@@ -113,7 +118,6 @@ header {
 }
 
 .header__logo {
-  position: relative;
   top: 0;
   display: flex;
   position: sticky;
@@ -122,6 +126,7 @@ header {
   width: 100%;
   min-height: 4rem;
   box-shadow: 0px 1px 5px grey;
+  z-index: 5;
 }
 .header__logo img {
   max-width: 45%;
@@ -213,7 +218,7 @@ footer i {
   border: 0;
   border-radius: 20px;
   font-weight: 500;
-  box-shadow: 0px 5px 10px -3px rgba(128, 128, 128, 0.3);
+  box-shadow: 0px 5px 10px -3px rgba(128, 128, 128, 0.4);
   background: white;
   padding: 0.5rem 1rem;
 }
@@ -290,7 +295,7 @@ footer i {
   border: 0;
   border-radius: 20px;
   font-weight: 500;
-  box-shadow: 0px 5px 10px -3px rgba(128, 128, 128, 0.3);
+  box-shadow: 0px 5px 10px -3px rgba(128, 128, 128, 0.4);
   transition: all 400ms;
 }
 .instruction__block:hover {
@@ -342,7 +347,7 @@ footer i {
   background: white;
   border: 0;
   border-radius: 20px;
-  box-shadow: 0px 5px 10px -3px rgba(128, 128, 128, 0.3);
+  box-shadow: 0px 5px 10px -3px rgba(128, 128, 128, 0.4);
 }
 .restaurant__card a {
   display: flex;
@@ -365,7 +370,7 @@ footer i {
   padding: 0.3rem 0.7rem;
   background: #99E2D0;
   border-radius: 2px;
-  box-shadow: 0px 5px 10px -3px rgba(128, 128, 128, 0.3);
+  box-shadow: 0px 5px 10px -3px rgba(128, 128, 128, 0.4);
 }
 .restaurant__card:hover {
   box-shadow: 0 5px 10px -3px rgba(128, 128, 128, 0.6);
