@@ -55,12 +55,14 @@
     padding: 1.5rem 3rem;
     padding-left: 2rem;
     @include tag-block;
+    transition: all 400ms;
     &:hover {
         background: fade-out($color-primary, .8);
         cursor: pointer;
         i {
             color: $color-primary;
         }
+        @include shadow-hover;
     }
     i {
         color: rgba(0, 0, 0, 0.5);
@@ -83,6 +85,7 @@
             font-size: 1rem;
             color: white;
         }
+
     }
 }
 
@@ -126,6 +129,9 @@
             background: $color-tertiary;
             border-radius: 2px;
             @include shadow;
+        }
+        &:hover {
+            @include shadow-hover;
         }
 }
 

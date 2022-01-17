@@ -60,6 +60,9 @@
     @include tag-block;
     background: white;
     padding: .5rem 1rem;
+    &:hover {
+        @include shadow-hover;
+    }
 }
 
 .tag__body {
