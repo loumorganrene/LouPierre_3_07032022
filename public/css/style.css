@@ -1,3 +1,16 @@
+@keyframes dropApparition {
+  0% {
+    opacity: 0;
+    top: -70px;
+  }
+  10% {
+    opacity: 0;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
 *,
 *::before,
 *::after {
@@ -201,18 +214,15 @@ footer i {
 }
 .dish__container h2:after {
   content: "";
-  /* This is necessary for the pseudo element to work. */
   display: block;
-  /* This will put the pseudo element on its own line. */
   margin: 0.2rem 0;
-  /* This will center the border. */
   width: 3.5rem;
-  /* Change this to whatever width you want. */
   border-bottom: 3px solid #99E2D0;
-  /* This creates the border. Replace black with whatever color you want. */
 }
 
 .dish__tag {
+  opacity: 0;
+  position: relative;
   width: 100%;
   background: #f6f6f6;
   border: 0;
@@ -221,6 +231,34 @@ footer i {
   box-shadow: 0px 5px 10px -3px rgba(128, 128, 128, 0.4);
   background: white;
   padding: 0.5rem 1rem;
+  animation: dropApparition 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+.dish__tag--1 {
+  animation-delay: 0.1111111111s;
+}
+.dish__tag--2 {
+  animation-delay: 0.2222222222s;
+}
+.dish__tag--3 {
+  animation-delay: 0.3333333333s;
+}
+.dish__tag--4 {
+  animation-delay: 0.4444444444s;
+}
+.dish__tag--5 {
+  animation-delay: 0.5555555556s;
+}
+.dish__tag--6 {
+  animation-delay: 0.6666666667s;
+}
+.dish__tag--7 {
+  animation-delay: 0.7777777778s;
+}
+.dish__tag--8 {
+  animation-delay: 0.8888888889s;
+}
+.dish__tag--9 {
+  animation-delay: 1s;
 }
 .dish__tag:hover {
   box-shadow: 0 5px 10px -3px rgba(128, 128, 128, 0.6);
