@@ -25,12 +25,30 @@
     }
 }
 
-@keyframes pushLeft {
-    from {
-        right: calc(0rem + 1rem);
+@keyframes loaderColorChange {
+    0% {
+        filter: invert(88%) sepia(14%) saturate(712%) hue-rotate(112deg) brightness(96%) contrast(89%);
+    } 
+    
+    50% {
+        filter: invert(39%) sepia(85%) saturate(827%) hue-rotate(233deg) brightness(88%) contrast(96%);
+    } 
+
+    100% {
+        filter: invert(62%) sepia(58%) saturate(644%) hue-rotate(284deg) brightness(101%) contrast(103%);
     }
-    to {
-        right: 65px;
+}
+
+@keyframes loaderDisparition {
+    99% {
+        cursor: wait;
+        z-index: 9999;
+        opacity: 1;
+    }
+
+    100% {
+        z-index:0;
+        opacity: 0;
     }
 }
 

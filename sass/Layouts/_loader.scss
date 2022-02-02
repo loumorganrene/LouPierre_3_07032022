@@ -1,0 +1,20 @@
+
+.loader {
+    position: fixed;
+    z-index: 9999;
+    height : 100%;
+    width : 100%;
+    background: $color-white;
+    opacity: 1;
+    &__img {
+        position : fixed;
+        opacity: 1;
+        height : 100%;
+        width : 50%;
+        top : 0%;
+        left : 25%;
+        filter: invert(39%) sepia(85%) saturate(827%) hue-rotate(233deg) brightness(88%) contrast(96%);
+        animation: loaderColorChange 2s infinite alternate-reverse;
+    }
+    animation: loaderDisparition 3s linear forwards;
+}
