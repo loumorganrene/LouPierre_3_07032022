@@ -11,16 +11,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link rel="stylesheet" href="/.public/css/style.css">
-    <title>Menu - Blueprint</title>
+    <link rel="stylesheet" href="/public/css/style.css">
+    <title>Menu - La palette du goût</title>
 </head>
 
 <body>
     <header>
-        <section class="header__logo">
+        <div class="header__logo">
             <a class="fas fa-arrow-left" href="index.html"></a>
             <img src="asset/images/logo/ohmyfood@2x.svg" alt="Logo du site ohmyfood">
-        </section>
+        </div>
         <div class="header__restaurant">
             <img class="restaurant__img" src="asset/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Assiette du menu du restaurant">
         </div>
@@ -28,60 +28,105 @@
 
     <main class="menu">
         <div class="menu__title">
-            <h1>Nom du restaurant</h1>
-            <i class="far fa-heart"></i>
+            <h1>La palette du goût</h1>
+            <div class="card__action--heart">
+                <i class="fas fa-heart"></i>
+                <i class="far fa-heart"></i>
+            </div>
         </div>
 
         <section class="dish__container">
             <h2>Entrées</h2>
             <article class="dish__tag">
-                <h3>Nom du plat</h3>
-                <div class="tag__body">
-                    <p>Lorem, ipsum.</p>
-                    <p class="tag__price">00€</p>
+                <div class="tag__desc">
+                    <h3>Fricassée d'escargot</h3>
+
+                    <div class="tag__body">
+                        <p>Au piment d'Espelette</p>
+                        <div class="tag__price">25€</div>
+                    </div>
+                </div>
+                
+                <div class="tag__button">
+                    <i class="fas fa-check-circle"></i>
                 </div>
             </article>
 
-            <article class="dish__tag">
-                <h3>Nom du plat</h3>
-                <div class="tag__body">
-                    <p>Lorem, ipsum.</p>
-                    <p class="tag__price">00€</p>
+            <article class="dish__tag dish__tag--1">
+                <div class="tag__desc">
+                    <h3>Foie gras de canard mi-cuit</h3>
+
+                    <div class="tag__body">
+                        <p>Et ses copeaux de truffe noire</p>
+                        <div class="tag__price">35€</div>
+                    </div>
+                </div>
+                
+                <div class="tag__button">
+                    <i class="fas fa-check-circle"></i>
                 </div>
             </article>
 
-            <article class="dish__tag">
-                <h3>Nom du plat</h3>
-                <div class="tag__body">
-                    <p>Lorem, ipsum.</p>
-                    <p class="tag__price">00€</p>
+            <article class="dish__tag dish__tag--2">
+                <div class="tag__desc">
+                    <h3>Oeuf au plat</h3>
+
+                    <div class="tag__body">
+                        <p>Assaisonné à la truffe sur lit de caviar</p>
+                        <div class="tag__price">20€</div>
+                    </div>
+                </div>
+                
+                <div class="tag__button">
+                    <i class="fas fa-check-circle"></i>
                 </div>
             </article>
         </section>
 
         <section class="dish__container">
             <h2>Plats</h2>
-            <article class="dish__tag">
-                <h3>Nom du plat</h3>
-                <div class="tag__body">
-                    <p>Lorem, ipsum.</p>
-                    <p class="tag__price">00€</p>
+            <article class="dish__tag dish__tag--3">
+                <div class="tag__desc">
+                    <h3>Filet de boeuf aux herbes</h3>
+
+                    <div class="tag__body">
+                        <p>Accompagné de sa ribambelle de légumes</p>
+                        <div class="tag__price">40€</div>
+                    </div>
+                </div>
+                
+                <div class="tag__button">
+                    <i class="fas fa-check-circle"></i>
                 </div>
             </article>
 
-            <article class="dish__tag">
-                <h3>Nom du plat</h3>
-                <div class="tag__body">
-                    <p>Lorem, ipsum.</p>
-                    <p class="tag__price">00€</p>
+            <article class="dish__tag dish__tag--4">
+                <div class="tag__desc">
+                    <h3>Parmentier de queue de boeuf</h3>
+
+                    <div class="tag__body">
+                        <p>À la truffe noire sur sa purée de panais</p>
+                        <div class="tag__price">35€</div>
+                    </div>
+                </div>
+                
+                <div class="tag__button">
+                    <i class="fas fa-check-circle"></i>
                 </div>
             </article>
 
-            <article class="dish__tag">
-                <h3>Nom du plat</h3>
-                <div class="tag__body">
-                    <p>Lorem, ipsum.</p>
-                    <p class="tag__price">00€</p>
+            <article class="dish__tag dish__tag--5">
+                <div class="tag__desc">
+                    <h3>Filet de turbot</h3>
+
+                    <div class="tag__body">
+                        <p>Aux agrumes</p>
+                        <div class="tag__price">44€</div>
+                    </div>
+                </div>
+                
+                <div class="tag__button">
+                    <i class="fas fa-check-circle"></i>
                 </div>
             </article>
         </section>
@@ -89,33 +134,54 @@
         <section class="dish__container">
             <h2>Desserts</h2>
             
-            <article class="dish__tag">
-                <h3>Nom du plat</h3>
-                <div class="tag__body">
-                    <p>Lorem, ipsum.</p>
-                    <p class="tag__price">00€</p>
+            <article class="dish__tag dish__tag--6">
+                <div class="tag__desc">
+                    <h3>Paris-Brest</h3>
+
+                    <div class="tag__body">
+                        <p>Revisité</p>
+                        <div class="tag__price">18€</div>
+                    </div>
+                </div>
+                
+                <div class="tag__button">
+                    <i class="fas fa-check-circle"></i>
                 </div>
             </article>
 
-            <article class="dish__tag">
-                <h3>Nom du plat</h3>
-                <div class="tag__body">
-                    <p>Lorem, ipsum.</p>
-                    <p class="tag__price">00€</p>
+            <article class="dish__tag dish__tag--7">
+                <div class="tag__desc">
+                    <h3>Macaron au chocolat d'exception</h3>
+
+                    <div class="tag__body">
+                        <p>Et glace à la vanille de Madagascar</p>
+                        <div class="tag__price">22€</div>
+                    </div>
+                </div>
+                
+                <div class="tag__button">
+                    <i class="fas fa-check-circle"></i>
                 </div>
             </article>
 
-            <article class="dish__tag">
-                <h3>Nom du plat</h3>
-                <div class="tag__body">
-                    <p>Lorem, ipsum.</p>
-                    <p class="tag__price">00€</p>
+            <article class="dish__tag dish__tag--8">
+                <div class="tag__desc">
+                    <h3>Mousse au chocolat</h3>
+
+                    <div class="tag__body">
+                        <p>Au piment d'Espelette et à la truffe noire</p>
+                        <div class="tag__price">23€</div>
+                    </div>
+                </div>
+                
+                <div class="tag__button">
+                    <i class="fas fa-check-circle"></i>
                 </div>
             </article>
         </section>
 
         <div class="order-btn__container">
-            <button>Commander</button>
+            <button class="button">Commander</button>
         </div>
     </main>
 
