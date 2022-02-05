@@ -47,7 +47,7 @@
     background: white;
     gap: 1rem;
     padding: 0 2rem 4rem;
-    @media (min-width: 415px) and (max-width: 768px) {
+    @media (min-width: 415px) {
         flex-direction: row;
         background: white;
         padding: 1rem;
@@ -55,7 +55,7 @@
         gap: 2rem;
         .ellipsis {
             display: none;
-            @media (min-width: 505px) and (max-width: 768px) {
+            @media (min-width: 521px) {
                 display: inline;
             }
         }
@@ -89,7 +89,7 @@
     .fa-mobile-alt {
         padding-right: .8rem;
     }
-    @media (min-width: 415px) and (max-width: 768px) {
+    @media (min-width: 415px) {
         width: 29%;
         padding-left: 1.3rem;
         i {
@@ -100,6 +100,18 @@
         }
         .fa-store {
             padding-right: 1.4rem;
+        }
+    }
+    @media (min-width: 769px) {
+        padding-left: 1.5rem;
+        i {
+            padding-right: 1.7rem;
+        }
+        .fa-mobile-alt {
+            padding-right: .7rem;
+        }
+        .fa-store {
+            padding-right: 1.9rem;
         }
     }
     .fa-layers {
@@ -133,7 +145,7 @@
     padding: 0 1rem;
     padding-bottom: 4rem;
     gap: 1.5rem;
-    @media (min-width: 415px) and (max-width: 768px) {
+    @media (min-width: 415px) {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;

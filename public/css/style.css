@@ -96,9 +96,14 @@ p {
   font-size: 1rem;
 }
 
-@media (min-width: 415px) and (max-width: 768px) {
+@media (min-width: 415px) {
   p {
-    font-size: clamp(0.7rem, 3vw, 0.843rem);
+    font-size: clamp(0.65rem, 1vw, 1rem);
+  }
+}
+@media (min-width: 769px) {
+  p {
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
   }
 }
 .button {
@@ -407,7 +412,7 @@ footer i {
   gap: 1rem;
   padding: 0 2rem 4rem;
 }
-@media (min-width: 415px) and (max-width: 768px) {
+@media (min-width: 415px) {
   .instruction__container {
     flex-direction: row;
     background: white;
@@ -419,12 +424,12 @@ footer i {
     display: none;
   }
 }
-@media (min-width: 415px) and (max-width: 768px) and (min-width: 505px) and (max-width: 768px) {
+@media (min-width: 415px) and (min-width: 521px) {
   .instruction__container .ellipsis {
     display: inline;
   }
 }
-@media (min-width: 415px) and (max-width: 768px) {
+@media (min-width: 415px) {
   .instruction__container > * {
     flex-basis: 100%;
   }
@@ -461,7 +466,7 @@ footer i {
 .instruction__block .fa-mobile-alt {
   padding-right: 0.8rem;
 }
-@media (min-width: 415px) and (max-width: 768px) {
+@media (min-width: 415px) {
   .instruction__block {
     width: 29%;
     padding-left: 1.3rem;
@@ -474,6 +479,20 @@ footer i {
   }
   .instruction__block .fa-store {
     padding-right: 1.4rem;
+  }
+}
+@media (min-width: 769px) {
+  .instruction__block {
+    padding-left: 1.5rem;
+  }
+  .instruction__block i {
+    padding-right: 1.7rem;
+  }
+  .instruction__block .fa-mobile-alt {
+    padding-right: 0.7rem;
+  }
+  .instruction__block .fa-store {
+    padding-right: 1.9rem;
   }
 }
 .instruction__block .fa-layers {
@@ -506,7 +525,7 @@ footer i {
   padding-bottom: 4rem;
   gap: 1.5rem;
 }
-@media (min-width: 415px) and (max-width: 768px) {
+@media (min-width: 415px) {
   .restaurants__container {
     flex-direction: row;
     flex-wrap: wrap;

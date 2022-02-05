@@ -48,8 +48,14 @@ p {
     font-size: 1rem;
 }
 
-@media (min-width: 415px) and (max-width: 768px) {
+@media (min-width: 415px) {
     p {
-        font-size: clamp(.7rem, 3vw, .843rem);
+        font-size: clamp(.65rem, 1vw, 1rem);
+    }
+}
+
+@media (min-width: 769px) {
+    p {
+        font-size: clamp(.8rem, 1.5vw, 1rem);
     }
 }
