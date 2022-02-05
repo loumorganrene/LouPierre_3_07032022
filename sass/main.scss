@@ -26,6 +26,14 @@
         margin: 1rem 0;
         font-weight: 500;
     }
+    @media (min-width: 992px) {
+        justify-content: flex-start;
+        padding-left: 2rem;
+        p {
+            margin: 1.5rem 0;
+            font-weight: 500;
+        }
+    }
 }
 
 .slogan {
@@ -38,6 +46,10 @@
         font-size: 1.1rem;
         font-weight: 300;
         margin: .8rem 0 1.5rem 0;
+    }
+    @media (min-width: 992px) {
+        text-align:left;
+        align-items:flex-start;
     }
 }
 
@@ -62,6 +74,10 @@
         & > * {
             flex-basis: 100%;
         }
+    }
+    @media (min-width: 992px) {
+        padding: 0 2rem 4rem;
+        gap: 4rem;
     }
 }
 
@@ -89,9 +105,27 @@
     .fa-mobile-alt {
         padding-right: .8rem;
     }
+    .fa-layers {
+        display: flex;
+        position: absolute;
+        align-self: center;
+        left: -15px;
+        padding-right: 0;
+        font-size: 2rem;
+        .fa-circle {
+            color: $color-primary;
+        }
+        .fa-layers-text{
+            position: absolute;
+            align-self: center;
+            left: 11px;
+            font-size: 1rem;
+            color: white;
+        }
+
+    }
     @media (min-width: 415px) {
         width: 29%;
-        padding-left: 1.3rem;
         i {
             padding-right: .5rem;
         }
@@ -114,24 +148,29 @@
             padding-right: 1.9rem;
         }
     }
-    .fa-layers {
-        display: flex;
-        position: absolute;
-        align-self: center;
-        left: -15px;
-        padding-right: 0;
-        font-size: 2rem;
-        .fa-circle {
-            color: $color-primary;
+    @media (min-width: 992px) {
+        padding: 1.5rem;
+        padding-left: 2.5rem;
+        i {
+            font-size: clamp(1rem, 2vw, 2rem);
+            padding-right: 2.7rem;
         }
-        .fa-layers-text{
-            position: absolute;
-            align-self: center;
-            left: 11px;
-            font-size: 1rem;
-            color: white;
+        .fa-mobile-alt {
+            padding-right: .7rem;
         }
-
+        .fa-store {
+            padding-right: 3.2rem;
+        }
+        .fa-layers {
+            left: -25px;
+            .fa-circle {
+                font-size: 3rem;
+            }
+            .fa-layers-text{
+                left: 17px;
+                font-size: 1.5rem;
+            }
+        }
     }
 }
 
@@ -153,6 +192,11 @@
         row-gap: 1rem;
         & > * {
             flex: 0 1 48%;
+        }
+    }
+    @media (min-width: 992px) {
+        & > * {
+            flex: 0 1 23%;
         }
     }
 }

@@ -13,9 +13,15 @@ header {
     min-height: 4rem;
     box-shadow: 0px 1px 5px grey;
     z-index: 5;
+    @media (min-width: 992px) {
+        min-height: 5rem;
+    }
     img {
         max-width: 45%;
         height: auto;
         align-self: center;
+        @media (min-width: 992px) {
+            width: 20%;
+        }
     }
 }
