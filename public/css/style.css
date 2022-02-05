@@ -506,6 +506,18 @@ footer i {
   padding-bottom: 4rem;
   gap: 1.5rem;
 }
+@media (min-width: 415px) and (max-width: 768px) {
+  .restaurants__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 0;
+    row-gap: 1rem;
+  }
+  .restaurants__container > * {
+    flex: 0 1 48%;
+  }
+}
 
 .restaurant__card {
   position: relative;
