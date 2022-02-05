@@ -93,8 +93,14 @@ h3 {
 p {
   margin: 0;
   padding: 0;
+  font-size: 1rem;
 }
 
+@media (min-width: 415px) and (max-width: 768px) {
+  p {
+    font-size: clamp(0.7rem, 3vw, 0.843rem);
+  }
+}
 .button {
   padding: 1rem 0;
   width: 200px;
@@ -130,7 +136,7 @@ p {
 .card__action--heart {
   display: flex;
   padding: 0.2rem 0.5rem 0 0;
-  transition-delay: all 100ms;
+  transition-delay: 100ms;
 }
 .card__action--heart .fas {
   position: relative;
@@ -163,7 +169,7 @@ p {
   width: 100%;
   background: white;
   opacity: 1;
-  animation: loaderDisparition 3s linear forwards;
+  animation: loaderDisparition 2.5s linear forwards;
 }
 .loader__img {
   position: fixed;
@@ -401,13 +407,35 @@ footer i {
   gap: 1rem;
   padding: 0 2rem 4rem;
 }
+@media (min-width: 415px) and (max-width: 768px) {
+  .instruction__container {
+    flex-direction: row;
+    background: white;
+    padding: 1rem;
+    padding-left: 2rem;
+    gap: 2rem;
+  }
+  .instruction__container .ellipsis {
+    display: none;
+  }
+}
+@media (min-width: 415px) and (max-width: 768px) and (min-width: 505px) and (max-width: 768px) {
+  .instruction__container .ellipsis {
+    display: inline;
+  }
+}
+@media (min-width: 415px) and (max-width: 768px) {
+  .instruction__container > * {
+    flex-basis: 100%;
+  }
+}
 
 .instruction__block {
   display: flex;
   position: relative;
-  align-items: baseline;
+  align-items: center;
   width: 100%;
-  padding: 1.5rem 3rem;
+  padding: 1.5rem;
   padding-left: 2rem;
   width: 100%;
   background: #f6f6f6;
@@ -428,7 +456,25 @@ footer i {
 }
 .instruction__block i {
   color: rgba(0, 0, 0, 0.5);
-  padding-right: 2.5rem;
+  padding-right: 1.7rem;
+}
+.instruction__block .fa-mobile-alt {
+  padding-right: 0.8rem;
+}
+@media (min-width: 415px) and (max-width: 768px) {
+  .instruction__block {
+    width: 29%;
+    padding-left: 1.3rem;
+  }
+  .instruction__block i {
+    padding-right: 0.5rem;
+  }
+  .instruction__block .fa-mobile-alt {
+    padding-right: 0.2rem;
+  }
+  .instruction__block .fa-store {
+    padding-right: 1.4rem;
+  }
 }
 .instruction__block .fa-layers {
   display: flex;
@@ -444,7 +490,7 @@ footer i {
 .instruction__block .fa-layers .fa-layers-text {
   position: absolute;
   align-self: center;
-  left: 0.7rem;
+  left: 11px;
   font-size: 1rem;
   color: white;
 }

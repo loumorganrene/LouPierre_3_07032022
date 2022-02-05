@@ -5,4 +5,4 @@ $color-white: white;
 
 $num-dish: 9;
 $anim-dur: 1s;
-$anim-delay: $anim-dur / $num-dish;
+$anim-delay: calc($anim-dur / $num-dish);

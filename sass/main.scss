@@ -47,14 +47,30 @@
     background: white;
     gap: 1rem;
     padding: 0 2rem 4rem;
+    @media (min-width: 415px) and (max-width: 768px) {
+        flex-direction: row;
+        background: white;
+        padding: 1rem;
+        padding-left: 2rem;
+        gap: 2rem;
+        .ellipsis {
+            display: none;
+            @media (min-width: 505px) and (max-width: 768px) {
+                display: inline;
+            }
+        }
+        & > * {
+            flex-basis: 100%;
+        }
+    }
 }
 
 .instruction__block {
     display: flex;
     position: relative;
-    align-items: baseline;
+    align-items: center;
     width: 100%;
-    padding: 1.5rem 3rem;
+    padding: 1.5rem;
     padding-left: 2rem;
     @include tag-block;
     transition: all 400ms;
@@ -68,7 +84,23 @@
     }
     i {
         color: rgba(0, 0, 0, 0.5);
-        padding-right: 2.5rem;
+        padding-right: 1.7rem;
+    }
+    .fa-mobile-alt {
+        padding-right: .8rem;
+    }
+    @media (min-width: 415px) and (max-width: 768px) {
+        width: 29%;
+        padding-left: 1.3rem;
+        i {
+            padding-right: .5rem;
+        }
+        .fa-mobile-alt {
+            padding-right: .2rem;
+        }
+        .fa-store {
+            padding-right: 1.4rem;
+        }
     }
     .fa-layers {
         display: flex;
@@ -83,7 +115,7 @@
         .fa-layers-text{
             position: absolute;
             align-self: center;
-            left: .7rem;
+            left: 11px;
             font-size: 1rem;
             color: white;
         }
