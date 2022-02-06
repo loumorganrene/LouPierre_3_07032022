@@ -106,7 +106,7 @@ p {
     font-size: clamp(0.8rem, 1.5vw, 1rem);
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 993px) {
   p {
     font-size: clamp(0.2rem, 1.4vw, 1.3rem);
   }
@@ -226,7 +226,7 @@ header {
   height: auto;
   align-self: center;
 }
-@media (min-width: 992px) {
+@media (min-width: 993px) {
   .header__logo img {
     width: 20%;
   }
@@ -313,9 +313,39 @@ footer i {
   width: 3.5rem;
   border-bottom: 3px solid #99E2D0;
 }
+.dish__container--flex {
+  display: flex;
+  flex-direction: row;
+  padding: 0 1rem;
+  gap: 1rem;
+}
+.dish__container--icon {
+  display: none;
+}
+@media (min-width: 768px) {
+  .dish__container--icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 10rem;
+    color: #99E2D0;
+  }
+  .dish__container > * {
+    flex-basis: 100%;
+  }
+}
+
+.dish__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
 
 .dish__tag {
   display: flex;
+  flex-direction: row;
   width: 100%;
   background: #fff;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
@@ -424,7 +454,7 @@ footer i {
   margin: 1rem 0;
   font-weight: 500;
 }
-@media (min-width: 992px) {
+@media (min-width: 993px) {
   .location {
     justify-content: flex-start;
     padding-left: 2rem;
@@ -447,7 +477,7 @@ footer i {
   font-weight: 300;
   margin: 0.8rem 0 1.5rem 0;
 }
-@media (min-width: 992px) {
+@media (min-width: 993px) {
   .slogan {
     text-align: left;
     align-items: flex-start;
@@ -483,7 +513,7 @@ footer i {
     flex-basis: 100%;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 993px) {
   .instruction__container {
     padding: 0 2rem 4rem;
     gap: 4rem;
@@ -567,7 +597,7 @@ footer i {
     padding-right: 1.9rem;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 993px) {
   .instruction__block {
     padding: 1.5rem;
     padding-left: 2.5rem;
@@ -617,7 +647,7 @@ footer i {
     flex: 0 1 48%;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 993px) {
   .restaurants__container > * {
     flex: 0 1 23%;
   }
