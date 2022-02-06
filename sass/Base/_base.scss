@@ -29,7 +29,7 @@ li {
 }
 
 h1 {
-    font-size: 1.75rem;
+    font-size: clamp(1.75rem,5vw,2.5rem);
     @include margin-padding;
 }
 
