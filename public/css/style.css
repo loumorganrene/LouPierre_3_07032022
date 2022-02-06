@@ -301,7 +301,7 @@ footer i {
 .dish__container {
   display: flex;
   flex-direction: column;
-  padding: 0 1rem;
+  padding: 1rem 1rem;
   gap: 1rem;
 }
 .dish__container h2 {
@@ -323,7 +323,6 @@ footer i {
   display: flex;
   flex-direction: row;
   padding: 0 1rem;
-  gap: 1rem;
 }
 .dish__container--icon {
   display: none;
