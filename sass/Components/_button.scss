@@ -32,26 +32,32 @@
 
 .card__action--heart {
     display: flex;
-    padding: .2rem .5rem 0 0;
+    padding: .1rem .5rem 0 0;
     .fas {
         position: relative;
         inset: 0;
         background: linear-gradient(to top, $color-secondary, $color-primary);
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-size: 1.5rem;
+        font-size: clamp(1.5rem,5vw,3rem);
         opacity: 0;
         inset: 0;
         transition: opacity 200ms ease-in;
     }
-
     .far {
         position: absolute;
         opacity: 1;
-        font-size: 1.5rem;
+        font-size: clamp(1.5rem, 5vw,3rem);
         transition: opacity 150ms;
     }
-
+    &.restaurant_version {
+        .fas {
+            font-size: 1.5rem;
+        }
+        .far {
+            font-size: 1.5rem;
+        }
+    }
     &:hover {
         .fas {
             opacity: 1;
