@@ -160,7 +160,7 @@ p {
   position: relative;
   inset: 0;
   background: linear-gradient(to top, #FF79DA, #9356DC);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: clamp(1.5rem, 5vw, 3rem);
   opacity: 0;
