@@ -26,7 +26,7 @@
         margin: 1rem 0;
         font-weight: 500;
     }
-    @media (min-width: 992px) {
+    @media (min-width: 993px) {
         justify-content: flex-start;
         padding-left: 2rem;
         p {
@@ -47,7 +47,7 @@
         font-weight: 300;
         margin: .8rem 0 1.5rem 0;
     }
-    @media (min-width: 992px) {
+    @media (min-width: 993px) {
         text-align:left;
         align-items:flex-start;
     }
@@ -75,7 +75,7 @@
             flex-basis: 100%;
         }
     }
-    @media (min-width: 992px) {
+    @media (min-width: 993px) {
         padding: 0 2rem 4rem;
         gap: 4rem;
     }
@@ -148,7 +148,7 @@
             padding-right: 1.9rem;
         }
     }
-    @media (min-width: 992px) {
+    @media (min-width: 993px) {
         padding: 1.5rem;
         padding-left: 2.5rem;
         i {
@@ -194,7 +194,7 @@
             flex: 0 1 48%;
         }
     }
-    @media (min-width: 992px) {
+    @media (min-width: 993px) {
         & > * {
             flex: 0 1 23%;
         }
