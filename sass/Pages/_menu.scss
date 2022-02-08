@@ -37,8 +37,9 @@
 .menu__content {
     @media (min-width: 992px) {
     display: flex;
+    align-items: flex-start;
     &>*{
-        flex-basis: 100%;
+        width: calc(100%/3);
         }
     }
 }
@@ -65,6 +66,8 @@
     &--flex {
         display: flex;
         flex-direction: row;
+        padding:0;
+        margin:0;
     }
     &--icon {
         display: none;
@@ -116,6 +119,9 @@
         transition: width 0.3s;
         h3 {
             margin: 0;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
         }
         .tag__body {
             display: flex;
