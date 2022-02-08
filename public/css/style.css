@@ -170,7 +170,7 @@ p {
 .card__action--heart .far {
   position: absolute;
   opacity: 1;
-  font-size: clamp(1.5rem, 5vw, 3rem);
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
   transition: opacity 150ms;
 }
 .card__action--heart.restaurant_version .fas {
