@@ -13,6 +13,12 @@
         width : 50%;
         top : 0%;
         left : 25%;
+        @media (min-width: 992px) {
+            height : 100%;
+            width : 30%;
+            top : 0%;
+            left : 40%;
+        }
         filter: invert(39%) sepia(85%) saturate(827%) hue-rotate(233deg) brightness(88%) contrast(96%);
         animation: loaderColorChange 2s infinite alternate-reverse;
     }

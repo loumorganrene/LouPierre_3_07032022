@@ -32,14 +32,14 @@
 
 .card__action--heart {
     display: flex;
-    padding: .1rem .5rem 0 0;
+    padding: .1rem .6rem 0 0;
     .fas {
         position: relative;
         inset: 0;
         background: linear-gradient(to top, $color-secondary, $color-primary);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-size: clamp(1.5rem,5vw,3rem);
+        font-size: clamp(1.5rem,5vw,2.5rem);
         opacity: 0;
         inset: 0;
         transition: opacity 200ms ease-in;

@@ -153,7 +153,7 @@ p {
 
 .card__action--heart {
   display: flex;
-  padding: 0.1rem 0.5rem 0 0;
+  padding: 0.1rem 0.6rem 0 0;
   transition-delay: 100ms;
 }
 .card__action--heart .fas {
@@ -162,7 +162,7 @@ p {
   background: linear-gradient(to top, #FF79DA, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: clamp(1.5rem, 5vw, 3rem);
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
   opacity: 0;
   inset: 0;
   transition: opacity 200ms ease-in;
@@ -204,6 +204,14 @@ p {
   left: 25%;
   filter: invert(39%) sepia(85%) saturate(827%) hue-rotate(233deg) brightness(88%) contrast(96%);
   animation: loaderColorChange 2s infinite alternate-reverse;
+}
+@media (min-width: 992px) {
+  .loader__img {
+    height: 100%;
+    width: 30%;
+    top: 0%;
+    left: 40%;
+  }
 }
 
 header {
